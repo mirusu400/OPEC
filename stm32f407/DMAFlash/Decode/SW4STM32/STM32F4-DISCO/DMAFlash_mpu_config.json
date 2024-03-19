@@ -1,0 +1,36 @@
+{
+    "_default_": {
+        "_region_0_": {
+            "Addrs": 16,
+            "Attrs": 302383163
+        },
+        "_region_1_": {
+            "Addrs": 134217745,
+            "Attrs": 100794401
+        },
+        "_region_2_": {
+            "Addrs": 536870930,
+            "Attrs": 319160347
+        },
+        "_region_3_": {
+            "Addrs": 0,
+            "Attrs": 0
+        },
+        "_region_4_": {
+            "Addrs": 0,
+            "Attrs": 0
+        },
+        "_region_5_": {
+            "Addrs": 0,
+            "Attrs": 0
+        },
+        "_region_6_": {
+            "Addrs": 0,
+            "Attrs": 0
+        },
+        "_region_7_": {
+            "Addrs": 0,
+            "Attrs": 0
+        }
+    }
+}

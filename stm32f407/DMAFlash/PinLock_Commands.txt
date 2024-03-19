@@ -1,0 +1,10 @@
+load
+set logging file ./logs/PinLock.log
+set pagination off
+set logging on
+
+b main.c:274
+
+c
+while 1
+step

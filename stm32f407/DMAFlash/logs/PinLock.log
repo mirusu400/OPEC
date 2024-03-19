@@ -1,0 +1,62 @@
+Breakpoint 1 at 0x800072e: file ../../Src/main.c, line 274.
+Note: automatically using hardware breakpoints for read-only addresses.
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
+
+Program received signal SIGINT, Interrupt.
+0x08000390 in Error_Handler () at ../../Src/main.c:535
+535	  while(1)
