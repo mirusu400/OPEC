@@ -5,6 +5,7 @@ set -x
 
 app_list=("
     PinLock
+    DMAFlash
 ")
 
 start_time_s=`date +%s`
@@ -28,15 +29,31 @@ function build_PinLock {
 	echo -e "\n[+] Total: $sum_time seconds"
 }
 
+function build_DMAFlash {
+    echo "[*] Build $1 ..."
+    cd DMAFlash/Decode/SW4STM32/STM32F4-DISCO/;
+    cp Makefile9.mk Makefile; make -j$(nproc);
+    cp Makefile4.mk Makefile; make -j$(nproc);
+    cd -;
+    end_time_s=`date +%s`
+    sum_time=$[$end_time_s - $start_time_s]
+    echo -e "\n[+] Finish building $1!"
+    echo -e "\n[+] Total: $sum_time seconds"
+}
+
 
 function build_all {
     build_PinLock "PinLock"
+    build_DMAFlash "DMAFlash"
 }
 
 
 if [ $1 != null ]; then
     if [[ "PinLock"  =~ "${1}" ]]; then
         build_PinLock $1
+
+    elif [[ "DMAFlash"  =~ "${1}" ]]; then
+        build_DMAFlash $1
     
     elif [[ "all"  =~ "${1}" ]]; then
         build_all

@@ -5,6 +5,7 @@ set -x
 
 app_list=("
     PinLock
+    DMAFlash
 ")
 
 if [ $OI_DIR ];then
@@ -24,15 +25,29 @@ function clean_PinLock {
     echo -e "\n[+] Finish cleaning $1!"
 }
 
+function clean_DMAFlash {
+    echo "[*] Clean $1 ..."
+    cd DMAFlash/Decode/SW4STM32/STM32F4-DISCO/
+    cp Makefile9.mk Makefile; make clean;
+    cp Makefile4.mk Makefile; make clean;
+	rm Makefile
+    cd -;
+    echo -e "\n[+] Finish cleaning $1!"
+}
+
 
 function clean_all {
     clean_PinLock "pinlcok"
+    clean_DMAFlash "DMAFlash"
 }
 
 
 if [ $1 != null ]; then
     if [[ "PinLock"  =~ "${1}" ]]; then
         clean_PinLock $1
+
+    elif [[ "DMAFlash"  =~ "${1}" ]]; then
+        clean_DMAFlash $1
     
     elif [[ "all"  =~ "${1}" ]]; then
         clean_all
